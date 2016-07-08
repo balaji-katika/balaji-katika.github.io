@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Grid System Example</title>
+  <title>Bootstrap Typography</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -10,19 +10,47 @@
 </head>
 <body>
 
-<div class="container-fluid">
-  <p>Resize the browser window to see the effect.</p>
-  <div class="row">
-    <div class="col-sm-2" style="border-style: dotted;border-width: 5px">Sample text 1</div>
-    <div class="col-sm-6" style="border-style: ridge;border-width: 3px">Sample text 2</div>
-    <div class="col-sm-4" style="border-style: inset;border-width: 2px">Sample text 3</div>
+<div class="container">
+<blockquote>
+    <p class="text-success">Live as if you were to die tomorrow; learn as if you were to live forever.</p>
+    <footer>Mahatma Gandhi</footer>
+  </blockquote>
+  <h1>h1 Bootstrap heading <mark>(36px)</mark></h1>
+  <h2>h2 Bootstrap heading (30px)</h2>
+  <h3>h3 Bootstrap heading (24px)</h3>
+  <h4>h4 Bootstrap heading (18px)</h4>
+  <h5>h5 Bootstrap heading (14px)</h5>
+  <h6>h6 Bootstrap heading (12px)</h6>
+  <div class="jumbotron">
+    <h1>Bootstrap Tutorial</h1> 
+    <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive,
+    mobile-first projects on the web.</p> 
   </div>
-  <p>Separator text</p>
-  <div class="row">
-    <div class="col-sm-3" style="border-style: dotted;border-width: 4px">Sample text 4</div>
-    <div class="col-sm-5" style="border-style: ridge;border-width: 4px">Sample text 5</div>
-    <div class="col-sm-4" style="border-style: inset;border-width: 4px">Sample text 6</div>
-  </div>
+  <p><abbr title="Walmart Labs">WM Labs</abbr> is the software development team of Walmart</p>
+  <p>Use <kbd>ctrl + shift + alt</kbd> to open the login dialog</p>
+<div class="table-responsive">          
+  <table class="table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+        <th>City</th>
+        <th>Country</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Anna</td>
+        <td>Pitt</td>
+        <td>35</td>
+        <td>New York</td>
+        <td>USA</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
 </body>
