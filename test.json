@@ -1,8 +1,11 @@
-{
-  "header": "balaji",
-  "id": 232,
-  "body": {
-    "email": "balaji.katika@gmail.com",
-    "name": "Balaji Katika"
+
+[
+  {
+    "header" : "Helicopter service for pilgrims",
+    "article" : "The AP Government went a step forward to give memorable experience to Pushkar devotees by giving them option of flying in helicopter. The devotees can board the helicopter for 15 minutes and can have a view of all the pushkar ghats in Vijayawada. <br><a href=\"http://legend-ornate.blogspot.com/2016/08/sub-committe-to-evaluate-and-study-stp.html\">Click here for more details</a>"
+  },
+  {
+    "header" : "KCR to visit Alampur",
+    "article" : "Telangana CM K Chandrashekar Rao to launch Krishna Pushkaralu at Jogulamba temple at Alampur in Mahabubnagar district. The Chief Minister will leave for Jogulamba on August 11 and stay put for the night. On August 12, KCR will perform special prayers in Jogulamba temple in the early hours. He will take bath at Gondimalla Pushkar Ghat, 10 km away from Jogulamba temple, amidst Vedic chantings."
   }
-}
+]
