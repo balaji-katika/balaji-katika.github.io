@@ -8,6 +8,10 @@ a:hover {
   background-color: #3F51B5;
 }
 
+body {
+  color: #3F51B5;
+}
+
 .zone_info_mep {
     padding: 12px;
     border-left: 1px solid #D9DDE1;
