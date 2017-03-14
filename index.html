@@ -31,7 +31,13 @@
       .carousel-caption {
         display: none; 
       }
+      .list-block>li {
+        display: inline-block;
+        padding-right: 5px;
+        padding-left: 5px;
+}
     }
+
   </style>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -51,10 +57,15 @@
         <li><a href="#history">About Maatha</a></li>
         <li><a href="#gallery">Gallery</a></li>
         <li><a href="#team">Team</a></li>
-        <li><a href="#committee">Committee</a></li>
         <li><a href="#matrimony">Matrimony</a></li>
-        <li><a href="#location">Location</a></li>
-        <li><a href="http://shreesunamajakinimaatha.blogspot.in" target="_blank">Blog</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">More<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#committee">Committee</a></li>
+            <li><a href="#location">Location</a></li>
+            <li><a href="http://shreesunamajakinimaatha.blogspot.in" target="_blank">Blog</a></li>
+          </ul>
+        </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="http://www.4g-labs.com" target="_blank">Powered by 4G Labs</a></li>
@@ -63,12 +74,25 @@
   </div>
 </nav>
 
-<div class="container">
+<div class="container-fluid">
 <section id="home" class="bg-light-gray">
 <br><br><br>
 <marquee><h4>Developed by 4G Labs (Balaji Palangthodkar, Prathyusha Palangthodkar, Shashikala Kotankari</h4></marquee>
 <div class="row">
-  <div class="col-sm-8">
+  <div class="col-sm-1">
+    <div>
+      <h4 class="text-center">Follow us</h4>
+      <ul class="list-block social-buttons">
+          <li><a href="https://www.facebook.com/Sree-Sree-Sunama-Jakini-Matha-Temple-580818308599131/" target="_newtab"><i class="fa fa-facebook fa-3x"></i></a></li>
+          <li><a href="https://www.youtube.com/channel/UCd6EXOFpvIvujbw5KJE6X8w" target="_newtab"><i class="fa fa-youtube fa-3x"></i></a></li>
+          <li><a href="http://shreesunamajakinimaatha.blogspot.in" target="_newtab"><i class="fa fa-comment fa-3x"></i></a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Sri_Sunama_Jakini_Matha" target="_newtab"><i class="fa fa-wikipedia-w fa-3x"></i></a></li>
+          <li><a href="https://twitter.com/4gLabs" target="_newtab"><i class="fa fa-twitter fa-3x"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/balajikatika/" target="_newtab"><i class="fa fa-linkedin fa-3x"></i></a></li>
+      </ul>
+  </div>
+  </div>
+  <div class="col-sm-7">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
@@ -123,17 +147,16 @@
     </div>
   </div>
   <div class="col-sm-4">
-    <div class="well">
-      <ul class="list-inline social-buttons">
-          <li><a href="https://www.facebook.com/Sree-Sree-Sunama-Jakini-Matha-Temple-580818308599131/" target="_newtab"><i class="fa fa-facebook fa-3x"></i></a></li>
-          <li><a href="https://www.youtube.com/channel/UCd6EXOFpvIvujbw5KJE6X8w" target="_newtab"><i class="fa fa-youtube fa-3x"></i></a></li>
-          <li><a href="http://shreesunamajakinimaatha.blogspot.in" target="_newtab"><i class="fa fa-comment fa-3x"></i></a></li>
-          <li><a href="https://en.wikipedia.org/wiki/Sri_Sunama_Jakini_Matha" target="_newtab"><i class="fa fa-wikipedia-w fa-3x"></i></a></li>
-          <li><a href="https://twitter.com/4gLabs" target="_newtab"><i class="fa fa-twitter fa-3x"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/balajikatika/" target="_newtab"><i class="fa fa-linkedin fa-3x"></i></a></li>
-      </ul>
+    <div style="display: inline-block;">
+      <h4 class="text-center">Also Available on</h4>
       <p class="text-center"><a href="https://play.google.com/store/apps/details?id=com.fourglabs.venue.sunama" target="_blank"><img src="img/googleplay.png"></a></p>
     </div>
+    <div style="display: inline-block;">
+    <h4 class="text-center">Visitor Count</h4>
+    <script type="text/javascript" src="https://counter3.fcs.ovh/private/counter.js?c=2f81d19770ec65cd038210a4d78421cf"></script>
+<noscript><a href="https://www.freecounterstat.com" title="free hit counter"><img src="https://counter3.fcs.ovh/private/freecounterstat.php?c=2f81d19770ec65cd038210a4d78421cf" border="0" title="free hit counter" alt="free hit counter"></a></noscript>
+    </div>
+
     <div class="well">
        <h3>Latest News...</h3>
        <hr>
@@ -154,9 +177,51 @@
 <div class="row">
 <br><br><br>
 <div class="col-sm-12">
-<div class="well">
+<div  style="overflow-y:scroll; height:200px;">
+  <ul class="nav nav-pills nav-justified">
+    <li class="active"><a data-toggle="tab" href="#history1">Sunama Maatha</a></li>
+    <li><a data-toggle="tab" href="#history2">Temple History</a></li>
+    <li><a data-toggle="tab" href="#history3">తెలుగు లొ</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="history1" class="tab-pane fade in active">
+      <h3>Sunama Maatha</h3>
+      <p>Sri Sunama Jakini matha born in Malkari family from Arekatika community in Pinnepalli village of Yadiki
+village, Tadipatri taluk, Anantapuramu district. She married to Hanumanthakari Thanji Rao from Yadiki village
+in a very young age. She was very devotional and use to observe fasting very oftenly. One day during fasting
+she went unconscious. Her husband thought that she is dead and ordered to bury her. Localites requested her
+husband to pass on the message to her mother, father and brothers who were in Pinnepalli village. Her
+husband did not allow this. As localites were getting ready to bury her, they observed that Sunama matha has
+moving her arm and informed the same to her husband. Under alcohol effect her husband ordered localites to
+bury her anyways. In that sense Sunama matha has taken jeeva samadhi. It is estimated that this incident has
+happened around 1803 AD. <br><br>
+Sunama matha family members came to know the incident after few days and started arguing with her
+husband. Angrily he told them that no point in arguing with him and better go to burial place and cry. When
+they went to burial place, they found white fresh flowers even after few days of her burial. They heard an
+anonymous voice from the sky and told them to get marry Sunama matha's husband with her sister Jakinima.
+On refusing this, her family members tongues became like dogs tongue. Soon they realised their mistake and
+agreed to get marry Sunama's sister Jakinima with her husband Tanjirao.
+From that time Sunama matha is being worshipped as goddess re-incarnation by Arekatika community. </p>
+    </div>
+    <div id="history2" class="tab-pane fade">
+      <h3>History of Sree Sree Sunama Jakini Matha temple</h3>
+      <p>The foundation stone for Sree Sree Sunama Jakini Matha temple was laid on 22-02-2002 in Gooty town of
+Anantapuramu district. Praana Pratishta of main deity was done on 14-02-2003. On second annual celebration 
+i.e. on 17-02-2005 and 18-02-2005, shikhara was consecrated. From that year onwards annual year jaatara is
+being celebrated grandly by the temple committee on second Thursday and Friday of Magha maasam.
+Devotees from Andhra, Telangana, Karnataka, Tamilnadu and Pondicherry visit temple during annual jaatara</p>
+    </div>
+    <div id="history3" class="tab-pane fade">
+      <h3>శ్రీ సునామ జకిని అమ్మ వారి చరిత్ర</h3>
+      <p>శ్రీ సునామ జకిని అమ్మ వారు తాడిపత్రి తాలుక యాడికి గ్రామము నందు మల్కారి గొత్రములొ జన్మించినారు. యుక్త వయసు రాగ ఆమెను యాడికి గ్రామములొ హనుమంతకారి గొత్రము శ్రీ తాంజి రావు గారితొ వివాహము జరిగినది.</p>
+    </div>
+  </div>
+</div>
+<!--<div class="well">
  <p>Sri Sunama Jakini Matha was born into Suryavamshi Are-Katika community of Pinnepalli village in Anantapur district, Andhra Pradesh, India. A temple was built for this goddess near Gooty town in Anantapur district is also one of the first temple for Are-katika community. <br><br>Sri Sunama Jakini matha was born in Malkari family and married to Hanumanthakari family.<br><br>The foundation stone for temple was laid on 22-02-2002 and prana pratishtha was done on 14-02-2003. On second annual celebration i.e., on 17-02-2005 and 18-02-2005 Shikhara was consecrated. From that year on every year annual celebrations are conducted on second friday of Magha (month).</p>
- </div>
+ </div>-->
+</div>
 </div>
 </div>
 </section>
