@@ -12,6 +12,10 @@ body {
   color: #3F51B5;
 }
 
+footer.sunama-footer {
+  background-color: #9c9ba5;
+}
+
 .zone_info_mep {
     padding: 12px;
     border-left: 1px solid #D9DDE1;
@@ -62,4 +66,11 @@ body {
     display: block;
     padding-right: 5px;
     padding-left: 5px;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #3F51B5;
 }
