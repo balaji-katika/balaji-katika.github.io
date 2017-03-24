@@ -74,3 +74,42 @@ hr {
     border: 0;
     border-top: 1px solid #3F51B5;
 }
+
+.facebook {
+	padding-left: 5px;
+	width: 32px;
+	height: 32px;
+	background: url(./img/assets/facebook.png) no-repeat 0 0px;
+}
+
+.twitter {
+	margin-left: 5px;
+	padding-left: 5px;
+	width: 32px;
+	height: 32px;
+	background: url(./img/assets/twitter.png) no-repeat 0 0px;
+}
+
+.youtube {
+	margin-left: 5px;
+	padding-left: 10px;
+	width: 32px;
+	height: 32px;
+	background: url(./img/assets/youtube.png) no-repeat 0 0px;
+}
+
+.whatsapp {
+	margin-left: 5px;
+	padding-left: 10px;
+	width: 32px;
+	height: 32px;
+	background: url(./img/assets/whatzapp.jpeg) no-repeat 0 0px;
+}
+
+.blog {
+	margin-left: 5px;
+	padding-left: 10px;
+	width: 32px;
+	height: 32px;
+	background: url(./img/assets/blog.jpeg) no-repeat 0 0px;
+}
