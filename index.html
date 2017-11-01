@@ -3,13 +3,29 @@
 <head>
   <title>Sri Sunama Jakini Maatha Temple</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
   <link rel="stylesheet" href="sunama.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="https://www.w3schools.com/lib/w3.js"></script>
+  <script type="text/javascript">
+    function myFunction(elementId) {  
+      var x = $(".my-section")
+      for (var i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      //document.getElementById(elementId).style.display='block'
+      $('#' + elementId).show();
+    }
+     $(function(){ 
+    var navMain = $("#myNavbar");
+    navMain.on("click", "a", null, function () {
+      navMain.collapse('hide');
+    });
+});
+  </script>
   <style>
     /* Add a gray background color and some padding to the footer */
     footer {
@@ -54,20 +70,19 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#history">About Maatha</a></li>
-        <li><a href="#events">Events</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#donate">Donate</a></li>
-        <li><a href="#committee" target="_blank">Committee</a></li>
-        <li><a href="#team">Tech Team</a></li>
-        <li><a href="https://goo.gl/forms/9pzFvKw7sTAgDZRr2" target="_blank">Matrimony</a></li>
+        <li><a href="#home" onclick="myFunction('home')">Home</a></li>
+        <li><a href="#history" onclick="myFunction('history')">About Maatha</a></li>
+        <li><a href="#events" onclick="myFunction('events')">Events</a></li>
+        <li><a href="#gallery" onclick="myFunction('gallery')">Gallery</a></li>
+        <li><a href="#donate" onclick="myFunction('donate')">Donate</a></li>
+        <li><a href="#committee" onclick="myFunction('committee')">Committee</a></li>
+        <li><a href="#team" onclick="myFunction('team')">Tech Team</a></li>
+        <li><a href="#matrimony" onclick="myFunction('matrimony')">Matrimony</a></li>
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">More<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#location">Location</a></li>
-            <!--<li><a href="#patrika">AK Suryavamshi Samachar</a></li>-->
-            <li><a href="#feedback">Feedback</a></li>
+            <li><a href="#location" onclick="myFunction('location')">Location</a></li>
+            <li><a href="#feedback" onclick="myFunction('feedback')">Feedback</a></li>
             <li><a href="http://shreesunamajakinimaatha.blogspot.in" target="_blank">Blog</a></li>
           </ul>
         </li>
@@ -80,7 +95,7 @@
 </nav>
 
 <div class="container-fluid">
-<section id="home" class="bg-light-gray">
+<section id="home" class="bg-light-gray my-section">
 <br><br><br>
 <marquee><h4><a href="http://www.4g-labs.com/" target="_blank">Welcome to Shree Sunama Jakini Maatha Temple</a></h4></marquee>
 <div class="row">
@@ -187,7 +202,7 @@
 <hr>
 </div>
 <div class="container">
-<section id="history" class="bg-light-gray">
+<section id="history" class="bg-light-gray my-section">
 <div class="row">
 <br><br><br>
 <div class="col-sm-12">
@@ -253,7 +268,7 @@ Devotees from Andhra, Telangana, Karnataka, Tamilnadu and Pondicherry visit temp
   </div>
 </div>
 <div class="container">
-  <section id="events" class="bg-light-gray">
+  <section id="events" class="bg-light-gray my-section">
     <div class="row">
       <br><br><br>
       <div class="col-sm-12">
@@ -276,7 +291,7 @@ w3.includeHTML();
 </section>
 </div>
 
-<section id="gallery" class="bg-light-gray">
+<section id="gallery" class="bg-light-gray my-section">
 <br><br><br>
   <div class="container text-center">    
     <h3>Image Gallery</h3>
@@ -302,7 +317,7 @@ w3.includeHTML();
   <hr>
 </div>
 </section>
-<section id="donate" class="bg-light-gray">
+<section id="donate" class="bg-light-gray my-section">
   <div class="container text-center">
   <br><br><br>
     <div class="row">
@@ -318,7 +333,7 @@ IFSC Code: SBIN0000976</p>
     </div>
   </div>
 </section>
-<section id="committee" class="bg-light-gray">
+<section id="committee" class="bg-light-gray my-section">
   <div class="container">
     <br><br><br>
     <h3 class="text-center">Temple Management Committe</h3>
@@ -493,7 +508,7 @@ IFSC Code: SBIN0000976</p>
       </div>
     </div>
 </section>
-<section id="team" class="bg-light-gray">
+<section id="team" class="bg-light-gray my-section">
         <div class="container">
         <br><br><br>
             <div class="row">
@@ -608,7 +623,7 @@ IFSC Code: SBIN0000976</p>
         </div>
     </section>  
 <div class="container text-center">
-  <section id="matrimony" class="bg-light-gray">
+  <section id="matrimony" class="bg-light-gray my-section">
   <br><br><br>
     <div class="row">
       <div class="col-sm-12">
@@ -618,29 +633,14 @@ IFSC Code: SBIN0000976</p>
     </div>
   </section>
 </div>
-<section id="location" class="bg-light-gray">
+<section id="location" class="bg-light-gray my-section">
 <div class="container text-center">
 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3851.460130996507!2d77.6254546!3d15.1330544!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x99e39e1d270c306a!2sSri+Sunama+Jakani+Temple!5e0!3m2!1sen!2sin!4v1489251827336" style="width:100%;height:400px" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
 </section>
 <br>
-<!--<section id="patrika" class="bg-light-gray">
-  <div class="container text-center">
-  <br><br><br>
-    <div class="row">
-      <div class="col-sm-12">
-        <div style="background-image: url(./img/donate_bg.jpg);background-repeat: : repeat;"">
-          <h3 class="text-center">AK SuryaVamshi Samachar</h3>
-          <hr>
-          <p>Details of Subscription : <b>Annual Membership - 120/-   Life Membership - 1500/-</b> Send the MO/DD to the below mentioned office address</p><p class="text-center">
-AK Surya Vamshi Samachar<br>H.No. 13-3-931/10/A<br>Near Mallanna Temple, Jiya Guda<br>Hyderabad - 500 006</p><p>For online subscriptions, please transfer the amount to the below mentioned account number and whatsapp your details with pincode to <b>9849581555</b><br><i>Note: Online subscribers has to pay extra 50/- </i><p class="text-center">State Bank of Hyderabad (Any Branch)<br>A/c No - 62056559575<br>IFSC Code: SBHY0020256</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>-->
 <section id="feedback">
-  <div class="container text-center">
+  <div class="container text-center my-section">
   <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfrlwYzSjhjTANuk_aAc8iDo4rwix86HkKcD9KujgAuzzjnBg/viewform?embedded=true" style="width:100%;height:400px" frameborder="0" marginheight="0" marginwidth="0">Loading Feedback form...</iframe>
   </div>
 </section>
