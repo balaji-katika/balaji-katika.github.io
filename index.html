@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Sri Sunama Jakini Maatha Temple</title>
   <meta charset="utf-8">
@@ -11,7 +12,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="https://www.w3schools.com/lib/w3.js"></script>
   <script type="text/javascript">
-    function myFunction(elementId) {  
+    function myFunction(elementId) {
       var x = $(".my-section")
       for (var i = 0; i < x.length; i++) {
         x[i].style.display = "none";
@@ -19,636 +20,794 @@
       //document.getElementById(elementId).style.display='block'
       $('#' + elementId).show();
     }
-     $(function(){ 
-    var navMain = $("#myNavbar");
-    navMain.on("click", "a", null, function () {
-      navMain.collapse('hide');
+    $(function() {
+      var navMain = $("#myNavbar");
+      navMain.on("click", "a", null, function() {
+        navMain.collapse('hide');
+      });
     });
-});
   </script>
   <style>
     /* Add a gray background color and some padding to the footer */
+    
     footer {
       background-color: #f2f2f2;
       padding: 25px;
     }
-
     .carousel-inner img {
-      width: 100%; /* Set width to 100% */
+      width: 100%;
+      /* Set width to 100% */
+      
       min-height: 200px;
       max-height: 400px;
     }
-
     .navbar-inverse .navbar-nav>li>a {
       color: #ffffff;
     }
-
     /* Hide the carousel text when the screen is less than 600 pixels wide */
+    
     @media (max-width: 600px) {
       .carousel-caption {
-        display: none; 
+        display: none;
       }
       .list-block>li {
         display: inline-block;
         padding-right: 5px;
         padding-left: 5px;
-}
+      }
     }
-
   </style>
 </head>
+
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
-<nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#"><img src="img/logo.png"/></a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li><a href="#home" onclick="myFunction('home')">Home</a></li>
-        <li><a href="#history" onclick="myFunction('history')">About Maatha</a></li>
-        <li><a href="#events" onclick="myFunction('events')">Events</a></li>
-        <li><a href="#gallery" onclick="myFunction('gallery')">Gallery</a></li>
-        <li><a href="#donate" onclick="myFunction('donate')">Donate</a></li>
-        <li><a href="#committee" onclick="myFunction('committee')">Committee</a></li>
-        <li><a href="#team" onclick="myFunction('team')">Tech Team</a></li>
-        <li><a href="#matrimony" onclick="myFunction('matrimony')">Matrimony</a></li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">More<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#location" onclick="myFunction('location')">Location</a></li>
-            <li><a href="#feedback" onclick="myFunction('feedback')">Feedback</a></li>
-            <li><a href="http://shreesunamajakinimaatha.blogspot.in" target="_blank">Blog</a></li>
-          </ul>
-        </li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="http://www.4g-labs.com" target="_blank">Developed by 4G Labs</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<div class="container-fluid">
-<section id="home" class="bg-light-gray my-section">
-<br><br><br>
-<marquee><h4><a href="http://www.4g-labs.com/" target="_blank">Welcome to Shree Sunama Jakini Maatha Temple</a></h4></marquee>
-<div class="row">
-  <div class="col-sm-7">
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-        <li data-target="#myCarousel" data-slide-to="3"></li>
-        <li data-target="#myCarousel" data-slide-to="4"></li>
-      </ol>
-
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner" role="listbox">
-        <div class="item">
-          <img src="img/maatha2.jpg" alt="Image">
-          <div class="carousel-caption">
-            <h3>Procession of Maatha</h3>
-            <p>during annual celebrations</p>
-          </div>
-        </div>
-        <div class="item">
-          <img src="img/maatha_temple.jpg" alt="Image">
-          <div class="carousel-caption">
-            <h3>Temple at Gooty</h3>
-            <p>Inner Sanctum</p>
-          </div>
-        </div>
-        <div class="item active">
-          <img src="img/maatha1.jpg" alt="Image">
-          <div class="carousel-caption">
-            <h3>Shree Sunama Maatha</h3>
-            <p>Gooty, A.P</p> 
-          </div>
-        </div>
-        <div class="item">
-          <img src="img/maatha3.jpg" alt="Image">
-          <div class="carousel-caption">
-            <h3>Shree Jakini Maatha</h3>
-            <p>Gooty, A.P</p>
-          </div>
-        </div>
-        <div class="item">
-          <img src="img/maatha4.jpg" alt="Image">
-          <div class="carousel-caption">
-            <h3>Android App</h3>
-            <p>Developed by 4G Labs</p>
-          </div>
-        </div>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img src="img/logo.png" />
+        </a>
       </div>
-
-      <!-- Left and right controls -->
-      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-  </div>
-  <div class="col-sm-4">
-    <div style="display: inline-block;">
-      <!--<h4 class="text-center">Also Available on</h4>-->
-      <p class="text-center"><a href="https://play.google.com/store/apps/details?id=com.fourglabs.venue.sunama" target="_blank"><img src="img/googleplay.png"></a></p>
-    </div>
-    <div style="display: inline-block;">
-    <h4 class="text-center">Visitor Count</h4>
-    <script type="text/javascript" src="https://counter3.fcs.ovh/private/counter.js?c=2f81d19770ec65cd038210a4d78421cf"></script>
-<noscript><a href="https://www.freecounterstat.com" title="free hit counter"><img src="https://counter3.fcs.ovh/private/freecounterstat.php?c=2f81d19770ec65cd038210a4d78421cf" border="0" title="free hit counter" alt="free hit counter"></a></noscript>
-    </div>
-
-    <div class="well" style="background-image: url(./img/clipboard.jpg);background-size: cover;">
-       <h3 class="text-center">Latest       News...</h3>
-       <hr>
-       <div  style="overflow-y:scroll; height:150px;">
-       <ul>
-       <li>Sri Sunama Jakini Matha Mandir Gooty General Body committe elections meeting will be held on 28th July 2017 (Friday) at 10 A.M. Request everyone to attend the same</li>
-       <li>
-        <p>Sri Sunama Jakini Temple Development Association (Regd.) is planning to construct function hall near the temple premises for the benefit of piligrims.
-        The funtion hall shall have a dining hall, kitchen room, guest rooms, bath rooms and many other facilities. <br>Requesting Samaj members to kindly <a href="#donate">donate</a> 
-        towards this noble cause. Bank Account details of the Temple Trust are available from the '<a href="#donate">Donate</a>' menu item of this website. </p></li>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#home" onclick="myFunction('home')">Home</a>
+          </li>
+          <li><a href="#history" onclick="myFunction('history')">About Maatha</a>
+          </li>
+          <li><a href="#events" onclick="myFunction('events')">Events</a>
+          </li>
+          <li><a href="#gallery" onclick="myFunction('gallery')">Gallery</a>
+          </li>
+          <li><a href="#donate" onclick="myFunction('donate')">Donate</a>
+          </li>
+          <li><a href="#committee" onclick="myFunction('committee')">Committee</a>
+          </li>
+          <li><a href="#team" onclick="myFunction('team')">Tech Team</a>
+          </li>
+          <li><a href="#matrimony" onclick="myFunction('matrimony')">Matrimony</a>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">More<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#location" onclick="myFunction('location')">Location</a>
+              </li>
+              <li><a href="#feedback" onclick="myFunction('feedback')">Feedback</a>
+              </li>
+              <li><a href="http://shreesunamajakinimaatha.blogspot.in" target="_blank">Blog</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.4g-labs.com" target="_blank">Developed by 4G Labs</a>
+          </li>
         </ul>
       </div>
     </div>
-  </div>
-    <div class="col-sm-1">
-    <div>
-      <h4 class="text-center">Follow us</h4>
-      <ul class="list-block social-buttons">
-          <li><a href="https://www.facebook.com/Sree-Sree-Sunama-Jakini-Matha-Temple-580818308599131/" target="_newtab"><p class="facebook"></p></a></li>
-          <li><a href="https://www.youtube.com/channel/UCd6EXOFpvIvujbw5KJE6X8w" target="_newtab"><p class="youtube"></p></a></li>
-          <li><a href="https://chat.whatsapp.com/6Hmv9TPqo1CADmBnqzKkvv" target="_newtab"><p class="whatsapp"></p></a></li>
-          <li><a href="http://shreesunamajakinimaatha.blogspot.in" target="_newtab"><p class="blog"></p></a></li>
-          <li><a href="https://twitter.com/4gLabs" target="_newtab"><p class="twitter"></p></a></li>
-      </ul>
-    </div>
-  </div>
-</div>
-</section>
-<hr>
-</div>
-<div class="container">
-<section id="history" class="bg-light-gray my-section">
-<div class="row">
-<br><br><br>
-<div class="col-sm-12">
-<div  style="overflow-y:scroll; height:200px;">
-  <ul class="nav nav-pills nav-justified">
-    <li class="active"><a data-toggle="tab" href="#history1">Sunama Maatha</a></li>
-    <!--<li><a data-toggle="tab" href="#history4">Events</a></li>-->
-    <li><a data-toggle="tab" href="#history2">Temple History</a></li>
-    <li><a data-toggle="tab" href="#history3">తెలుగు లొ</a></li>
-    <li><a data-toggle="tab" href="#history5">ಕನ್ನಡದಲ್ಲಿ</a></li>
-  </ul>
+  </nav>
 
-  <div class="tab-content">
-    <div id="history1" class="tab-pane fade in active">
-      <h3>Sunama Maatha</h3>
-      <p>Sri Sunama Jakini matha born in Malkari family from Arekatika community in Pinnepalli village of Yadiki
-village, Tadipatri taluk, Anantapuramu district. She married to Hanumanthakari Thanji Rao from Yadiki village
-in a very young age. She was very devotional and use to observe fasting very oftenly. One day during fasting
-she went unconscious. Her husband thought that she is dead and ordered to bury her. Localites requested her
-husband to pass on the message to her mother, father and brothers who were in Pinnepalli village. Her
-husband did not allow this. As localites were getting ready to bury her, they observed that Sunama matha has
-moving her arm and informed the same to her husband. Under alcohol effect her husband ordered localites to
-bury her anyways. In that sense Sunama matha has taken jeeva samadhi. It is estimated that this incident has
-happened around 1803 AD. <br><br>
-Sunama matha family members came to know the incident after few days and started arguing with her
-husband. Angrily he told them that no point in arguing with him and better go to burial place and cry. When
-they went to burial place, they found white fresh flowers even after few days of her burial. They heard an
-anonymous voice from the sky and told them to get marry Sunama matha's husband with her sister Jakinima.
-On refusing this, her family members tongues became like dogs tongue. Soon they realised their mistake and
-agreed to get marry Sunama's sister Jakinima with her husband Tanjirao.
-From that time Sunama matha is being worshipped as goddess re-incarnation by Arekatika community. </p>
-    </div>
-    <div id="history2" class="tab-pane fade">
-      <h3>History of Sree Sree Sunama Jakini Matha temple</h3>
-      <p>The foundation stone for Sree Sree Sunama Jakini Matha temple was laid on 22-02-2002 in Gooty town of
-Anantapuramu district. Praana Pratishta of main deity was done on 14-02-2003. On second annual celebration 
-i.e. on 17-02-2005 and 18-02-2005, shikhara was consecrated. From that year onwards annual year jaatara is
-being celebrated grandly by the temple committee on second Thursday and Friday of Magha maasam.
-Devotees from Andhra, Telangana, Karnataka, Tamilnadu and Pondicherry visit temple during annual jaatara.</p>
-<p>The latest 14th Annual celebrations celebrated on 9-10th Feb, 2017 has witnessed over 50 thousand piligrims offering their prayers to the maatha.</p>
-    </div>
-    <div id="history3" class="tab-pane fade">
-      <h3>శ్రీ సునామా జకీనీ అమ్మవారి జీవిత చరిత్ర</h3>
-      <p>శ్రీ సునామా జకీనీ అమ్మవారు తాడిపత్రి తాలుకా యాడికి గ్రామమునందు మల్కారి గోత్రములో  జన్మించినది.యుక్త వయస్సు రాగా ఆమెను యాడికి గ్రామములో హనుమంతకారి గోత్రపు శ్రీ తాంజీరావు గారితో వివాహము జరిగినది. ఆమె ఎప్పుడూ దైవ భక్తి తో ఎక్కువ సమయం ఉపవాసాలు చెస్తుండెను. ఒక పర్యాయము ఎక్కువ ఉపవాసముతో గడిపినందుచే మూర్చపోగా, ఆమె భర్త బాగా త్రాగిన మత్తులో చనిపోయినదిగా నిర్ధారన చేసి అంత్యక్రియలకు ఉత్తర్వు ఇచ్చినాడట. ఆప్పుడు డాక్టర్లు లేరు. యాడికి సమీపంలో పిన్నేపల్లి గ్రామములో ఆమె తల్లి, తండ్రి, మరియు సోదరులకు తెలిపెదమని కురుబవారు చెప్పగా అందుకు ఆమె భర్త అంగీకరించలేదు. అంత్యక్రియలు చేయుటకు ముందు అమ్మవారు చేయి కదిపినట్టు కురుబవారు కనుగొని, అమ్మవారు బ్రతికేఉందని చెప్పగా అందుకు ఆమె భర్త ఒప్పుకొనక పూడ్చుటకు ఉత్తర్వు ఇవ్వగా, పూడ్చటం జరిగినది. అంటే ఆమె జీవసమాధి అయ్యింది అని అర్థం. ఆమె 1803 సం|| లో సమాధి అయి ఉండవచ్చని అంచనా.
-      </p>
-      <p>
-      పిన్నేపల్లి గ్రామములో అమ్మవారి తల్లి, తండ్రి, మరియు సోదరులు విషయము తెలుసుకొని యడికి గ్రామమునకు వచ్చి బాధతో అల్లునిపై విరుచుకొనిపడగా, ఆమె భర్త, అందరూ సమాధి దగ్గరకు వెళ్ళి ఎడ్చండి నా దగ్గర ఎందుకు ఎడ్చుతారు అని చెప్పెను. వారు సమాధి దగ్గరకు వెళ్ళి చూడగా సమాధి పై మంచి సువాసన గల తెల్లటి పుష్పపు మొగ్గలు కనబడెనట. అమ్మవారి చెల్లెలు శ్రీ మలకుమా జకినీ మతా ని తన భర్త కిచ్చి రెండవ వివాహము చెయమని అమ్మవారి వాక్కు వచ్చినదట. అందుకు అంగీకరించకపోగా వారందరి నాలుకలు కుక్క నాలికలు గా వ్రేలాడటం జరిగినదట. వారు తమ తప్పుని తెలుసుకొని క్షమాపన వేడి శ్రీ మలకుమా జకినీ అమ్మవారి కిచ్చి వివాహము చేయుటకు అంగీకరించినందున వారి నాలుకలు యధాప్రకారము అయినవట. శ్రీ మలుకుమా జకిని అమ్మవారికి, తాంజీరావు గారితో రెండవ వివాహము జరిపించారు.
- 
-ఆనాటి నుండి శ్రీ సునామా జకిని అమ్మవారు ఆరేకటిక కులములో ఆరాధ్య దైవముగా కొలువబడుతున్నది.
-      </p>
-    </div>
-    <!--<div id="history4" class="tab-pane fade">
+  <div class="container-fluid">
+    <section id="home" class="bg-light-gray my-section">
+      <br>
+      <br>
+      <br>
+      <marquee>
+        <h4><a href="http://www.4g-labs.com/" target="_blank">Welcome to Shree Sunama Jakini Maatha Temple</a></h4>
+      </marquee>
+      <div class="row">
+        <div class="col-sm-7">
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="3"></li>
+              <li data-target="#myCarousel" data-slide-to="4"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item">
+                <img src="img/maatha2.jpg" alt="Image">
+                <div class="carousel-caption">
+                  <h3>Procession of Maatha</h3>
+                  <p>during annual celebrations</p>
+                </div>
+              </div>
+              <div class="item">
+                <img src="img/maatha_temple.jpg" alt="Image">
+                <div class="carousel-caption">
+                  <h3>Temple at Gooty</h3>
+                  <p>Inner Sanctum</p>
+                </div>
+              </div>
+              <div class="item active">
+                <img src="img/maatha1.jpg" alt="Image">
+                <div class="carousel-caption">
+                  <h3>Shree Sunama Maatha</h3>
+                  <p>Gooty, A.P</p>
+                </div>
+              </div>
+              <div class="item">
+                <img src="img/maatha3.jpg" alt="Image">
+                <div class="carousel-caption">
+                  <h3>Shree Jakini Maatha</h3>
+                  <p>Gooty, A.P</p>
+                </div>
+              </div>
+              <div class="item">
+                <img src="img/maatha4.jpg" alt="Image">
+                <div class="carousel-caption">
+                  <h3>Android App</h3>
+                  <p>Developed by 4G Labs</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div style="display: inline-block;">
+            <!--<h4 class="text-center">Also Available on</h4>-->
+            <p class="text-center">
+              <a href="https://play.google.com/store/apps/details?id=com.fourglabs.venue.sunama" target="_blank"><img src="img/googleplay.png">
+              </a>
+            </p>
+          </div>
+          <div style="display: inline-block;">
+            <h4 class="text-center">Visitor Count</h4>
+            <script type="text/javascript" src="https://counter3.fcs.ovh/private/counter.js?c=2f81d19770ec65cd038210a4d78421cf"></script>
+            <noscript>
+              <a href="https://www.freecounterstat.com" title="free hit counter"><img src="https://counter3.fcs.ovh/private/freecounterstat.php?c=2f81d19770ec65cd038210a4d78421cf" border="0" title="free hit counter" alt="free hit counter">
+              </a>
+            </noscript>
+          </div>
+
+          <div class="well" style="background-image: url(./img/clipboard.jpg);background-size: cover;">
+            <h3 class="text-center">Latest       News...</h3>
+            <hr>
+            <div style="overflow-y:scroll; height:150px;">
+              <ul>
+                <li>Sri Sunama Jakini Matha Mandir Gooty General Body committe elections meeting will be held on 28th July 2017 (Friday) at 10 A.M. Request everyone to attend the same</li>
+                <li>
+                  <p>Sri Sunama Jakini Temple Development Association (Regd.) is planning to construct function hall near the temple premises for the benefit of piligrims. The funtion hall shall have a dining hall, kitchen room, guest rooms, bath rooms and many other facilities.
+                    <br>Requesting Samaj members to kindly <a href="#donate">donate</a> towards this noble cause. Bank Account details of the Temple Trust are available from the '<a href="#donate">Donate</a>' menu item of this website. </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-1">
+          <div>
+            <h4 class="text-center">Follow us</h4>
+            <ul class="list-block social-buttons">
+              <li>
+                <a href="https://www.facebook.com/Sree-Sree-Sunama-Jakini-Matha-Temple-580818308599131/" target="_newtab">
+                  <p class="facebook"></p>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/channel/UCd6EXOFpvIvujbw5KJE6X8w" target="_newtab">
+                  <p class="youtube"></p>
+                </a>
+              </li>
+              <li>
+                <a href="https://chat.whatsapp.com/6Hmv9TPqo1CADmBnqzKkvv" target="_newtab">
+                  <p class="whatsapp"></p>
+                </a>
+              </li>
+              <li>
+                <a href="http://shreesunamajakinimaatha.blogspot.in" target="_newtab">
+                  <p class="blog"></p>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/4gLabs" target="_newtab">
+                  <p class="twitter"></p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr>
+  </div>
+  <div class="container-fluid">
+    <section id="history" class="bg-light-gray my-section">
+      <div class="row">
+        <br>
+        <br>
+        <br>
+        <div class="col-sm-12">
+          <div style="overflow-y:scroll; height:200px;">
+            <ul class="nav nav-pills nav-justified">
+              <li class="active"><a data-toggle="tab" href="#history1">Sunama Maatha</a>
+              </li>
+              <!--<li><a data-toggle="tab" href="#history4">Events</a></li>-->
+              <li><a data-toggle="tab" href="#history2">Temple History</a>
+              </li>
+              <li><a data-toggle="tab" href="#history3">తెలుగు లొ</a>
+              </li>
+              <li><a data-toggle="tab" href="#history5">ಕನ್ನಡದಲ್ಲಿ</a>
+              </li>
+            </ul>
+
+            <div class="tab-content">
+              <div id="history1" class="tab-pane fade in active">
+                <h3>Sunama Maatha</h3>
+                <p>Sri Sunama Jakini matha born in Malkari family from Arekatika community in Pinnepalli village of Yadiki village, Tadipatri taluk, Anantapuramu district. She married to Hanumanthakari Thanji Rao from Yadiki village in a very young age. She was very devotional and use to observe fasting very oftenly. One day during fasting she went unconscious. Her husband thought that she is dead and ordered to bury her. Localites requested her husband to pass on the message to her mother, father and brothers who were in Pinnepalli village. Her husband did not allow this. As localites were getting ready to bury her, they observed that Sunama matha has moving her arm and informed the same to her husband. Under alcohol effect her husband ordered localites to bury her anyways. In that sense Sunama matha has taken jeeva samadhi. It is estimated that this incident has happened around 1803 AD.
+                  <br>
+                  <br> Sunama matha family members came to know the incident after few days and started arguing with her husband. Angrily he told them that no point in arguing with him and better go to burial place and cry. When they went to burial place, they found white fresh flowers even after few days of her burial. They heard an anonymous voice from the sky and told them to get marry Sunama matha's husband with her sister Jakinima. On refusing this, her family members tongues became like dogs tongue. Soon they realised their mistake and agreed to get marry Sunama's sister Jakinima with her husband Tanjirao. From that time Sunama matha is being worshipped as goddess re-incarnation by Arekatika community. </p>
+              </div>
+              <div id="history2" class="tab-pane fade">
+                <h3>History of Sree Sree Sunama Jakini Matha temple</h3>
+                <p>The foundation stone for Sree Sree Sunama Jakini Matha temple was laid on 22-02-2002 in Gooty town of Anantapuramu district. Praana Pratishta of main deity was done on 14-02-2003. On second annual celebration i.e. on 17-02-2005 and 18-02-2005, shikhara was consecrated. From that year onwards annual year jaatara is being celebrated grandly by the temple committee on second Thursday and Friday of Magha maasam. Devotees from Andhra, Telangana, Karnataka, Tamilnadu and Pondicherry visit temple during annual jaatara.</p>
+                <p>The latest 14th Annual celebrations celebrated on 9-10th Feb, 2017 has witnessed over 50 thousand piligrims offering their prayers to the maatha.</p>
+              </div>
+              <div id="history3" class="tab-pane fade">
+                <h3>శ్రీ సునామా జకీనీ అమ్మవారి జీవిత చరిత్ర</h3>
+                <p>శ్రీ సునామా జకీనీ అమ్మవారు తాడిపత్రి తాలుకా యాడికి గ్రామమునందు మల్కారి గోత్రములో జన్మించినది.యుక్త వయస్సు రాగా ఆమెను యాడికి గ్రామములో హనుమంతకారి గోత్రపు శ్రీ తాంజీరావు గారితో వివాహము జరిగినది. ఆమె ఎప్పుడూ దైవ భక్తి తో ఎక్కువ సమయం ఉపవాసాలు చెస్తుండెను. ఒక పర్యాయము ఎక్కువ ఉపవాసముతో గడిపినందుచే మూర్చపోగా, ఆమె భర్త బాగా త్రాగిన మత్తులో చనిపోయినదిగా నిర్ధారన చేసి అంత్యక్రియలకు ఉత్తర్వు ఇచ్చినాడట. ఆప్పుడు డాక్టర్లు లేరు. యాడికి సమీపంలో పిన్నేపల్లి గ్రామములో ఆమె తల్లి, తండ్రి, మరియు సోదరులకు తెలిపెదమని కురుబవారు చెప్పగా అందుకు ఆమె భర్త అంగీకరించలేదు. అంత్యక్రియలు చేయుటకు ముందు అమ్మవారు చేయి కదిపినట్టు కురుబవారు కనుగొని, అమ్మవారు బ్రతికేఉందని చెప్పగా అందుకు ఆమె భర్త ఒప్పుకొనక పూడ్చుటకు ఉత్తర్వు ఇవ్వగా, పూడ్చటం జరిగినది. అంటే ఆమె జీవసమాధి అయ్యింది అని అర్థం. ఆమె 1803 సం|| లో సమాధి అయి ఉండవచ్చని అంచనా.
+                </p>
+                <p>
+                  పిన్నేపల్లి గ్రామములో అమ్మవారి తల్లి, తండ్రి, మరియు సోదరులు విషయము తెలుసుకొని యడికి గ్రామమునకు వచ్చి బాధతో అల్లునిపై విరుచుకొనిపడగా, ఆమె భర్త, అందరూ సమాధి దగ్గరకు వెళ్ళి ఎడ్చండి నా దగ్గర ఎందుకు ఎడ్చుతారు అని చెప్పెను. వారు సమాధి దగ్గరకు వెళ్ళి చూడగా సమాధి పై మంచి సువాసన గల తెల్లటి పుష్పపు మొగ్గలు కనబడెనట. అమ్మవారి చెల్లెలు శ్రీ మలకుమా జకినీ మతా ని తన భర్త కిచ్చి రెండవ వివాహము చెయమని అమ్మవారి వాక్కు వచ్చినదట. అందుకు అంగీకరించకపోగా వారందరి నాలుకలు కుక్క నాలికలు గా వ్రేలాడటం జరిగినదట. వారు తమ తప్పుని తెలుసుకొని క్షమాపన వేడి శ్రీ మలకుమా జకినీ అమ్మవారి కిచ్చి వివాహము చేయుటకు అంగీకరించినందున వారి నాలుకలు యధాప్రకారము అయినవట. శ్రీ మలుకుమా జకిని అమ్మవారికి, తాంజీరావు గారితో రెండవ వివాహము జరిపించారు. ఆనాటి నుండి శ్రీ సునామా జకిని అమ్మవారు ఆరేకటిక కులములో ఆరాధ్య దైవముగా కొలువబడుతున్నది.
+                </p>
+              </div>
+              <!--<div id="history4" class="tab-pane fade">
       <h3>Important Events</h3>
       <p><<div w3-include-html="html/annual_celebrations"></div></p>
     </div>-->
-     <div id="history5" class="tab-pane fade">
-      <h3>ಸುನಮಾ ಜಾಕಿಣಿ ಮಾಥಾ ಹಿಸ್ಟರಿ ಕನ್ನಡದಲ್ಲಿ</h3>
-      <p>ಶ್ರೀ ಸುನಾಮಾ ಜಾಕಾನಿ ಮಾತಾ ಯಾಡಿಕಿ ಗ್ರಾಮ, ತೆಡಿಪತ್ರಿ ತಾಲೂಕಿನ ಅನಂತಪುರ್ ಜಿಲ್ಲೆಯ Pinnepalli ಗ್ರಾಮದಲ್ಲಿ ಆರೆಕಟಿಕಾ ಸಮುದಾಯದಿಂದ ಮಾಲ್ಕರಿ ಕುಟುಂಬದಲ್ಲಿ ಜನಿಸಿದರು. ಅವರು ಎಳೆವಯಸ್ಸಿನಲ್ಲೇ ರಲ್ಲಿ ಯಾಡಿಕಿ ಹಳ್ಳಿಯಿಂದ Hanumanthakari Thanji ರಾವ್ ಮದುವೆಯಾದ. ಅವಳು ತುಂಬಾ ಭಕ್ತಿ ಮತ್ತು ಬಹಳ oftenly ಉಪವಾಸ ವೀಕ್ಷಿಸಲು ಬಳಸಿ. ಅವರು ಉಪವಾಸ ಸಮಯದಲ್ಲಿ ಒಂದು ದಿನ ಪ್ರಜ್ಞೆ ಹೋದರು. ಅವರ ಪತಿ ಮತ್ತು ಅವರು ಸತ್ತ ಎಂದು ಭಾವಿಸಲಾಗಿದೆ ತನ್ನ ಮುಚ್ಚಲು ಆದೇಶ. Localites ತನ್ನ ತಾಯಿ, ತಂದೆ ಮತ್ತು ಸಹೋದರರು Pinnepalli ಹಳ್ಳಿಯಲ್ಲಿ ಯಾರು ಸಂದೇಶವನ್ನು ರವಾನಿಸಲು ಪತಿ ವಿನಂತಿಸಿದ. ಪತಿ ಈ ಅವಕಾಶ ನೀಡಲಿಲ್ಲ. localites ತನ್ನ ಮುಚ್ಚಲು ತಯಾರಾಗಿದ್ದಾರೆ ಮಾಡಲಾಯಿತು ಮಾಹಿತಿ, ಅವರು ಸುನಾಮಾ ಮಾತಾ ಅವಳ ಕೈಯನ್ನು ಚಾಲನೆಯ ಗಮನಿಸಿದ್ದಾರೆ ಪತಿ ಅದೇ ಮಾಹಿತಿ. ಮದ್ಯ ಪರಿಣಾಮ ಅಡಿಯಲ್ಲಿ ಪತಿ ಹೇಗಾದರೂ ತನ್ನ ಮುಚ್ಚಲು localites ಆದೇಶಿಸಿದರು. ಹಾಗಾಗಿ ಸುನಾಮಾ ಮಾತಾ ಜೀವ ಸಮಾಧಿಯ ಸ್ಥಳವು ತೆಗೆದುಕೊಂಡಿದ್ದಾರೆ. ಈ ಘಟನೆ 1803 ಸುಮಾರು ಕ್ರಿ.ಶ. ಸಂಭವಿಸಲಿಲ್ಲ ಎಂದು ಅಂದಾಜಿಸಲಾಗಿದೆ.</p>
- 
-      <p>ಸುನಾಮಾ ಮಾತಾ ಕುಟುಂಬ ಸದಸ್ಯರು ಕೆಲವು ದಿನಗಳ ನಂತರ ಘಟನೆ ತಿಳಿಯಲು ಬಂದು ಪತಿ ಜೊತೆ ವಾದ ಆರಂಭಿಸಿದರು. ಸಿಟ್ಟಿನಿಂದ ಅವರು ಅವರೊಂದಿಗೆ ವಾದ ಮತ್ತು ಉತ್ತಮ ಅರ್ಥವಿಲ್ಲ ಸ್ಥಳವನ್ನು ಮತ್ತು ಕೂಗು ಹೋಗಿ ತಿಳಿಸಿದರು. ಅವರು ಸಮಾಧಿ ಸ್ಥಳಕ್ಕೆ ಹೋದಾಗ, ಅವರು ಆಕೆಯ ಸಮಾಧಿ ಕೆಲವು ದಿನಗಳ ನಂತರ ಬಿಳಿ ತಾಜಾ ಹೂವುಗಳು ಕಂಡುಬಂದಿಲ್ಲ. ಅವರು ಆಕಾಶದಿಂದ ಅನಾಮಿಕ ಧ್ವನಿ ಕೇಳಿದ ಮತ್ತು ತನ್ನ ಸಹೋದರಿ ಜಾಕಾನಿ ಮಾತಾ ಜೊತೆ ಮದುವೆಯಾಗಲು ಸುನಾಮಾ ಮಾತಾ ಪತಿ ಮಾಡಲು ಹೇಳಿದರು. ಈ ನಿರಾಕರಿಸಿ, ತನ್ನ ಕುಟುಂಬ ಸದಸ್ಯರು ನಾಲಿಗೆಯನ್ನು ನಾಯಿಗಳು ಭಾಷೆ ರೀತಿಯ ಆಯಿತು. ತಕ್ಷಣ ಅವರು ತಮ್ಮ ತಪ್ಪಿನ ಅರಿವಾಗುತ್ತದೆ ಮತ್ತು ಪತಿ Tanjirao ಜೊತೆ ಮದುವೆಯಾಗಲು ಸುನಾಮಾ ಸಹೋದರಿ ಜಾಕಾನಿ ಮಾತಾ  ಪಡೆಯಲು ಒಪ್ಪಿಕೊಂಡರು. ಆ ಸಮಯದಲ್ಲಿ ಸುನಾಮಾ ಮಾತಾ ಆರೆಕಟಿಕಾ ಸಮುದಾಯದಿಂದ ದೇವತೆ ಮರು ಅವತಾರವೆಂದು ಪೂಜಿಸಲಾಗುತ್ತದೆ.
-      </p>
-    </div>
+              <div id="history5" class="tab-pane fade">
+                <h3>ಸುನಮಾ ಜಾಕಿಣಿ ಮಾಥಾ ಹಿಸ್ಟರಿ ಕನ್ನಡದಲ್ಲಿ</h3>
+                <p>ಶ್ರೀ ಸುನಾಮಾ ಜಾಕಾನಿ ಮಾತಾ ಯಾಡಿಕಿ ಗ್ರಾಮ, ತೆಡಿಪತ್ರಿ ತಾಲೂಕಿನ ಅನಂತಪುರ್ ಜಿಲ್ಲೆಯ Pinnepalli ಗ್ರಾಮದಲ್ಲಿ ಆರೆಕಟಿಕಾ ಸಮುದಾಯದಿಂದ ಮಾಲ್ಕರಿ ಕುಟುಂಬದಲ್ಲಿ ಜನಿಸಿದರು. ಅವರು ಎಳೆವಯಸ್ಸಿನಲ್ಲೇ ರಲ್ಲಿ ಯಾಡಿಕಿ ಹಳ್ಳಿಯಿಂದ Hanumanthakari Thanji ರಾವ್ ಮದುವೆಯಾದ. ಅವಳು ತುಂಬಾ ಭಕ್ತಿ ಮತ್ತು ಬಹಳ oftenly ಉಪವಾಸ ವೀಕ್ಷಿಸಲು ಬಳಸಿ. ಅವರು ಉಪವಾಸ ಸಮಯದಲ್ಲಿ ಒಂದು ದಿನ ಪ್ರಜ್ಞೆ ಹೋದರು. ಅವರ ಪತಿ ಮತ್ತು ಅವರು ಸತ್ತ ಎಂದು ಭಾವಿಸಲಾಗಿದೆ ತನ್ನ ಮುಚ್ಚಲು ಆದೇಶ. Localites ತನ್ನ ತಾಯಿ, ತಂದೆ ಮತ್ತು ಸಹೋದರರು Pinnepalli ಹಳ್ಳಿಯಲ್ಲಿ ಯಾರು ಸಂದೇಶವನ್ನು ರವಾನಿಸಲು ಪತಿ ವಿನಂತಿಸಿದ. ಪತಿ ಈ ಅವಕಾಶ ನೀಡಲಿಲ್ಲ. localites ತನ್ನ ಮುಚ್ಚಲು ತಯಾರಾಗಿದ್ದಾರೆ ಮಾಡಲಾಯಿತು ಮಾಹಿತಿ, ಅವರು ಸುನಾಮಾ ಮಾತಾ ಅವಳ ಕೈಯನ್ನು ಚಾಲನೆಯ ಗಮನಿಸಿದ್ದಾರೆ ಪತಿ ಅದೇ ಮಾಹಿತಿ. ಮದ್ಯ ಪರಿಣಾಮ ಅಡಿಯಲ್ಲಿ ಪತಿ ಹೇಗಾದರೂ ತನ್ನ ಮುಚ್ಚಲು localites ಆದೇಶಿಸಿದರು. ಹಾಗಾಗಿ ಸುನಾಮಾ ಮಾತಾ ಜೀವ ಸಮಾಧಿಯ ಸ್ಥಳವು ತೆಗೆದುಕೊಂಡಿದ್ದಾರೆ. ಈ ಘಟನೆ 1803 ಸುಮಾರು ಕ್ರಿ.ಶ. ಸಂಭವಿಸಲಿಲ್ಲ ಎಂದು ಅಂದಾಜಿಸಲಾಗಿದೆ.</p>
+
+                <p>ಸುನಾಮಾ ಮಾತಾ ಕುಟುಂಬ ಸದಸ್ಯರು ಕೆಲವು ದಿನಗಳ ನಂತರ ಘಟನೆ ತಿಳಿಯಲು ಬಂದು ಪತಿ ಜೊತೆ ವಾದ ಆರಂಭಿಸಿದರು. ಸಿಟ್ಟಿನಿಂದ ಅವರು ಅವರೊಂದಿಗೆ ವಾದ ಮತ್ತು ಉತ್ತಮ ಅರ್ಥವಿಲ್ಲ ಸ್ಥಳವನ್ನು ಮತ್ತು ಕೂಗು ಹೋಗಿ ತಿಳಿಸಿದರು. ಅವರು ಸಮಾಧಿ ಸ್ಥಳಕ್ಕೆ ಹೋದಾಗ, ಅವರು ಆಕೆಯ ಸಮಾಧಿ ಕೆಲವು ದಿನಗಳ ನಂತರ ಬಿಳಿ ತಾಜಾ ಹೂವುಗಳು ಕಂಡುಬಂದಿಲ್ಲ. ಅವರು ಆಕಾಶದಿಂದ ಅನಾಮಿಕ ಧ್ವನಿ ಕೇಳಿದ ಮತ್ತು ತನ್ನ ಸಹೋದರಿ ಜಾಕಾನಿ ಮಾತಾ ಜೊತೆ ಮದುವೆಯಾಗಲು ಸುನಾಮಾ ಮಾತಾ ಪತಿ ಮಾಡಲು ಹೇಳಿದರು. ಈ ನಿರಾಕರಿಸಿ, ತನ್ನ ಕುಟುಂಬ ಸದಸ್ಯರು ನಾಲಿಗೆಯನ್ನು ನಾಯಿಗಳು ಭಾಷೆ ರೀತಿಯ ಆಯಿತು. ತಕ್ಷಣ ಅವರು ತಮ್ಮ ತಪ್ಪಿನ ಅರಿವಾಗುತ್ತದೆ ಮತ್ತು ಪತಿ Tanjirao ಜೊತೆ ಮದುವೆಯಾಗಲು ಸುನಾಮಾ ಸಹೋದರಿ ಜಾಕಾನಿ ಮಾತಾ ಪಡೆಯಲು ಒಪ್ಪಿಕೊಂಡರು. ಆ ಸಮಯದಲ್ಲಿ ಸುನಾಮಾ ಮಾತಾ ಆರೆಕಟಿಕಾ ಸಮುದಾಯದಿಂದ ದೇವತೆ ಮರು ಅವತಾರವೆಂದು ಪೂಜಿಸಲಾಗುತ್ತದೆ.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
-</div>
-<div class="container">
+
   <section id="events" class="bg-light-gray my-section">
-    <div class="row">
-      <br><br><br>
-      <div class="col-sm-12">
-        <div  style="overflow-y:scroll; height:250px;">
+    <div class="container">
+      <div class="row">
+        <br>
+        <br>
+        <br>
+        <div class="col-sm-12">
+          <!--<div  style="overflow-y:scroll; height:250px;">
           <div w3-include-html="html/annual_celebrations"></div>
         </div>
+                <div class="container">-->
+          <h4 align="center">Important occasions in the chronological order</h4>
+          <p>Devotees from Andhra Pradesh, Telangana, Karnataka, Tamilnadu, Pondicherry and Maharashtra states visit temple during annual celebrations. It is estimated that over 50 thousand devotees offered their prayers to the goddess Sri Sunama Jakini Maatha during recent 14th annual celebrations.</p>
+          <table class="table .table-striped table-bordered">
+            <thead>
+              <tr>
+                <th>Occasion</th>
+                <th>Start Date</th>
+                <th>End Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Prana Pratishtha</td>
+                <td>11-02-2003</td>
+                <td>14-02-2003</td>
+              </tr>
+              <tr>
+                <td>First Annual Celebrations</td>
+                <td>30-01-2004</td>
+                <td>30-01-2004</td>
+              </tr>
+              <tr>
+                <td>Second Annual celebrations and Shikhara consecration</td>
+                <td>17-02-2005</td>
+                <td>18-02-2005</td>
+              </tr>
+              <tr>
+                <td>Third Annual celebrations</td>
+                <td>09-02-2006 </td>
+                <td>10-02-2006 </td>
+              </tr>
+              <tr>
+                <td>Fourth Annual celebrations</td>
+                <td>01-02-2007</td>
+                <td>02-02-2007</td>
+              </tr>
+              <tr>
+                <td>Fifth Annual celebrations</td>
+                <td>14-02-2008</td>
+                <td>15-02-2008</td>
+              </tr>
+              <tr>
+                <td>Sixth Annual celebrations</td>
+                <td>05-02-2009</td>
+                <td>06-02-2009</td>
+              </tr>
+              <tr>
+                <td>Seventh Annual celebrations</td>
+                <td>28-01-2010</td>
+                <td>28-01-2010</td>
+              </tr>
+              <tr>
+                <td>Eigth Annual celebrations</td>
+                <td>27-01-2011</td>
+                <td>28-01-2011</td>
+              </tr>
+              <tr>
+                <td>Ninth Annual celebrations</td>
+                <td>02-02-2012</td>
+                <td>03-02-2012</td>
+              </tr>
+              <tr>
+                <td>Tenth Annual celebrations</td>
+                <td>21-02-2013</td>
+                <td>22-02-2013</td>
+              </tr>
+              <tr>
+                <td>Eleventh Annual celebrations</td>
+                <td>06-02-2014</td>
+                <td>07-02-2014</td>
+              </tr>
+              <tr>
+                <td>Twelveth Annual celebrations</td>
+                <td>29-01-2015</td>
+                <td>30-01-2015</td>
+              </tr>
+              <tr>
+                <td>Thirteenth Annual celebrations</td>
+                <td>18-02-2016</td>
+                <td>19-02-2016</td>
+              </tr>
+              <tr>
+                <td>Fourteenth Annual celebrations</td>
+                <td>09-02-2017</td>
+                <td>10-02-2017</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--</div>-->
       </div>
     </div>
   </section>
-</div>
-<script>
+  <!--</div>-->
+  <!--<script>
 w3.includeHTML();
-</script>
-<!--<div class="well">
+</script>-->
+  <!--<div class="well">
  <p>Sri Sunama Jakini Matha was born into Suryavamshi Are-Katika community of Pinnepalli village in Anantapur district, Andhra Pradesh, India. A temple was built for this goddess near Gooty town in Anantapur district is also one of the first temple for Are-katika community. <br><br>Sri Sunama Jakini matha was born in Malkari family and married to Hanumanthakari family.<br><br>The foundation stone for temple was laid on 22-02-2002 and prana pratishtha was done on 14-02-2003. On second annual celebration i.e., on 17-02-2005 and 18-02-2005 Shikhara was consecrated. From that year on every year annual celebrations are conducted on second friday of Magha (month).</p>
  </div>-->
-</div>
+  <!--</div>
 </div>
 </div>
 </section>
-</div>
+</div>-->
 
-<section id="gallery" class="bg-light-gray my-section">
-<br><br><br>
-  <div class="container text-center">    
-    <h3>Image Gallery</h3>
-    <div class="row">
-      <div class="col-sm-3">
-        <img src="img/gallery1.jpg" class="img-responsive" style="width:100%;height: 200px" alt="Image">
+  <section id="gallery" class="bg-light-gray my-section">
+    <br>
+    <br>
+    <br>
+    <div class="container text-center">
+      <h3>Image Gallery</h3>
+      <div class="row">
+        <div class="col-sm-3">
+          <img src="img/gallery1.jpg" class="img-responsive" style="width:100%;height: 200px" alt="Image">
           <p>Ammavari Procession</p>
-      </div>
-      <div class="col-sm-3"> 
-        <img src="img/gallery2.jpg" class="img-responsive" style="width:100%;height: 200px" alt="Image">
-        <p>14th Annual Celebrations</p>
-      </div>
-      <div class="col-sm-3"> 
-        <img src="img/gallery3.jpg" class="img-responsive" style="width:100%;height: 200px" alt="Image">
-        <p>Kalasaalu</p>
-      </div>
-      <div class="col-sm-3"> 
-        <img src="img/gallery4.jpg" class="img-responsive" style="width:100%;height: 200px" alt="Image">
-        <p>14th Annual Celebrations</p>
-      </div>
-    </div>  
-  </div>
-  <hr>
-</div>
-</section>
-<section id="donate" class="bg-light-gray my-section">
-  <div class="container text-center">
-  <br><br><br>
-    <div class="row">
-      <div class="col-sm-12">
-        <div style="background-image: url(./img/donate_bg.jpg);background-repeat: : repeat;"">
-          <h3 class="text-center">Request to the Temple Donors</h3>
-          <hr>
-          <p>Devotees / visitors are requested to donate their offerings to Sree Sunama Jakini matha temple trust on the below given bank account through Net Banking or directly at the temple counter.</p><p class="text-center">
-Sree Sree Sunama Jakini Temple Development Association<br>Account No: 11449336473<br>State Bank of India Branch, Gooty, <br>Anantapuram Dist <br>
-IFSC Code: SBIN0000976</p>
+        </div>
+        <div class="col-sm-3">
+          <img src="img/gallery2.jpg" class="img-responsive" style="width:100%;height: 200px" alt="Image">
+          <p>14th Annual Celebrations</p>
+        </div>
+        <div class="col-sm-3">
+          <img src="img/gallery3.jpg" class="img-responsive" style="width:100%;height: 200px" alt="Image">
+          <p>Kalasaalu</p>
+        </div>
+        <div class="col-sm-3">
+          <img src="img/gallery4.jpg" class="img-responsive" style="width:100%;height: 200px" alt="Image">
+          <p>14th Annual Celebrations</p>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<section id="committee" class="bg-light-gray my-section">
-  <div class="container">
-    <br><br><br>
-    <h3 class="text-center">Temple Management Committe</h3>
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="zone_info_mep first"> 
-    <img border="0" title="K Subhanji Rao" alt="Subhanji Rao" class="photo_mep" style="width:100px;height: 100px" src="img/committee/president.jpg">
-          <div class="mep_details">
-            <ul>
-              <li class="mep_name"> 
-                <h4>K Subhanji Rao</h4>
-                <span class="statute">President</span> 
-              </li>
-                <li class="group epp"> 
-                  <a href="tel:+91-9985761337">+91-9985761337</a> 
-                </li>
-            </ul>
+    <hr>
+  </section>
+  <section id="donate" class="bg-light-gray my-section">
+    <div class="container text-center">
+      <br>
+      <br>
+      <br>
+      <div class="row">
+        <div class="col-sm-12">
+          <div style="background-image: url(./img/donate_bg.jpg);background-repeat: : repeat;">
+            <h3 class="text-center ">Request to the Temple Donors</h3>
+            <hr>
+            <p>Devotees / visitors are requested to donate their offerings to Sree Sunama Jakini matha temple trust on the below given bank account through Net Banking or directly at the temple counter.</p>
+            <p class="text-center ">
+              Sree Sree Sunama Jakini Temple Development Association
+              <br>Account No: 11449336473
+              <br>State Bank of India Branch, Gooty,
+              <br>Anantapuram Dist
+              <br> IFSC Code: SBIN0000976</p>
           </div>
-          <div class="clear"> &nbsp; </div>
         </div>
-        <div class="zone_info_mep first"> 
-          <a href="https://www.facebook.com/profile.php?id=100009555014128"><img border="0" title="K Subhanji Rao" alt="Subhanji Rao" class="photo_mep" style="width:100px;height: 100px" src="img/member2.jpg"></a>
-          <div class="mep_details">
-            <ul>
-              <li class="mep_name"> 
-                <h4>M Subhash</h4>
-                <span class="statute">Secretary</span> 
-              </li>
-                <li class="group epp"> 
-                  <a href="tel:+91-9440044980">+91-9440044980</a> 
-                </li>
-            </ul>
-          </div>
-          <div class="clear"> &nbsp; </div>
-        </div>
-        <div class="zone_info_mep first"> 
-          <img border="0" title="H Sudhakar Rao" alt="Sudhakar Rao" class="photo_mep" style="width:100px;height: 100px" src="img/committee/treasurer.jpg">
-          <div class="mep_details">
-            <ul>
-              <li class="mep_name"> 
-                <h4>H Sudhakar Rao</h4>
-                <span class="statute">Treasurer</span> 
-              </li>
-                <li class="group epp"> 
-                  <a href="tel:+91-9494131647">+91-9494131647</a> 
-                </li>
-            </ul>
-          </div>
-          <div class="clear"> &nbsp; </div>
-        </div>
-        <div class="zone_info_mep first"> 
-          <img border="0" title="H Lingoji Rao" alt="H Lingoji Rao" class="photo_mep" style="width:100px;height: 100px" src="img/committee/asst_treasurer.jpg">
-          <div class="mep_details">
-            <ul>
-              <li class="mep_name"> 
-                <h4>H Lingoji Rao</h4>
-                <span class="statute">Asst Treasurer</span> 
-              </li>
-                <li class="group epp"> 
-                  <a href="tel:+91-9985761337">+91-9985761337</a> 
-                </li>
-            </ul>
-          </div>
-          <div class="clear"> &nbsp; </div>
-        </div>
-        <div class="zone_info_mep first"> 
-          <img border="0" title="MK Babu Rao" alt="MK Babu Rao" class="photo_mep" style="width:100px;height: 100px" src="img/committee/asst_treasurer2.jpg">
-          <div class="mep_details">
-            <ul>
-              <li class="mep_name"> 
-                <h4>MK Babu Rao</h4>
-                <span class="statute">Asst Treasurer</span> 
-              </li>
-                <li class="group epp"> 
-                  <a href="tel:+91-9985761337">+91-9985761337</a> 
-                </li>
-            </ul>
-          </div>
-          <div class="clear"> &nbsp; </div>
-        </div>
-        <div class="zone_info_mep first"> 
-          <img border="0" title="K Suresh Rao" alt="K Suresh Rao" class="photo_mep" style="width:100px;height: 100px" src="img/committee/exec_member1.jpg">
-          <div class="mep_details">
-            <ul>
-              <li class="mep_name"> 
-                <h4>K Suresh Rao</h4>
-                <span class="statute">Executive Committee Member</span> 
-              </li>
-                <li class="group epp"> 
-                  <a href="tel:+91-9985761337">+91-9985761337</a> 
-                </li>
-            </ul>
-          </div>
-          <div class="clear"> &nbsp; </div>
-        </div>
-        <div class="zone_info_mep first"> 
-          <img border="0" title="H Rana Pratap" alt="H Rana Pratap" class="photo_mep" style="width:100px;height: 100px" src="img/committee/exec_member2.jpg">
-          <div class="mep_details">
-            <ul>
-              <li class="mep_name"> 
-                <h4>H Rana Pratap</h4>
-                <span class="statute">Executive Committee Member</span> 
-              </li>
-                <li class="group epp"> 
-                  <a href="tel:+91-9985761337">+91-9985761337</a> 
-                </li>
-            </ul>
-          </div>
-          <div class="clear"> &nbsp; </div>
-        </div>
-        <div class="zone_info_mep first"> 
-          <img border="0" title="Aluru M Lakshman Rao" alt="Aluru M Lakshman Rao" class="photo_mep" style="width:100px;height: 100px" src="img/committee/exec_member3.jpg">
-          <div class="mep_details">
-            <ul>
-              <li class="mep_name"> 
-                <h4>Aluru M Lakshman Rao</h4>
-                <span class="statute">Executive Committee Member</span> 
-              </li>
-                <li class="group epp"> 
-                  <a href="tel:+91-9985761337">+91-9985761337</a> 
-                </li>
-            </ul>
-          </div>
-          <div class="clear"> &nbsp; </div>
-        </div>
-        <div class="zone_info_mep first"> 
-          <img border="0" title="Shivaram Babaji" alt="Shivaram Babaji" class="photo_mep" style="width:100px;height: 100px" src="img/committee/exec_member4.jpg">
-          <div class="mep_details">
-            <ul>
-              <li class="mep_name"> 
-                <h4>Shivaram Babaji</h4>
-                <span class="statute">Executive Committee Member</span> 
-              </li>
-                <li class="group epp"> 
-                  <a href="tel:+91-9985761337">+91-9985761337</a> 
-                </li>
-            </ul>
-          </div>
-          <div class="clear"> &nbsp; </div>
-        </div>
-        <div class="zone_info_mep first"> 
-          <img border="0" title="HM Seshaji Rao" alt="HM Seshaji Rao" class="photo_mep" style="width:100px;height: 100px" src="img/committee/exec_member5.jpg">
-          <div class="mep_details">
-            <ul>
-              <li class="mep_name"> 
-                <h4>HM Seshaji Rao</h4>
-                <span class="statute">Executive Committee Member</span> 
-              </li>
-                <li class="group epp"> 
-                  <a href="tel:+91-9985761337">+91-9985761337</a> 
-                </li>
-            </ul>
-          </div>
-          <div class="clear"> &nbsp; </div>
-        </div>
-        <div class="zone_info_mep first"> 
-          <img border="0" title="K Lakshman Rao" alt="K Lakshman Rao" class="photo_mep" style="width:100px;height: 100px" src="img/committee/exec_member6.jpg">
-          <div class="mep_details">
-            <ul>
-              <li class="mep_name"> 
-                <h4>K Lakshman Rao</h4>
-                <span class="statute">Executive Committee Member</span> 
-              </li>
-                <li class="group epp"> 
-                  <a href="tel:+91-9985761337">+91-9985761337</a> 
-                </li>
-            </ul>
-          </div>
-          <div class="clear"> &nbsp; </div>
-        </div>
-        </div>
-      </div>
-    </div>
-</section>
-<section id="team" class="bg-light-gray my-section">
-        <div class="container">
-        <br><br><br>
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Technical Team</h2>
-                    <h3 class="section-subheading text-muted">We are team of volunteers working for Shree Sunama Jakini Maatha Temple to help piligrims get updated information about Maatha through various internet channels</h3>
-                </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="img/team/t5.jpg" class="img-responsive img-circle" alt="Balaji Katika">
-                        <h4>Balaji Palangthodkar</h4>
-                        <p class="text-muted">Android App and Website</p>
-                        <ul class="list-inline social-buttons">
-                            <li><a href="https://www.facebook.com/balaji.palangthodkar"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="https://www.facebook.com/balaji.palangthodkar"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="https://www.linkedin.com/in/balaji.katika"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                            <li><a href="tel:+91 98866 56337"><i class="fa fa-phone">+91-9886656337</i></a></li>
-                            <li><a href="mailto:balaji.katika@gmail.com"><i class="fa fa-envelope"> balaji.katika@gmail.com</i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="img/team/t1.jpg" class="img-responsive img-circle" alt="Prathyusha">
-                        <h4>Prathyusha Palangthodkar</h4>
-                        <p class="text-muted">Android App and Website</p>
-                        <ul class="list-inline social-buttons">
-                            <li><a href="https://www.facebook.com/prathyusha.palangthodkar" target="_newtab"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="https://www.facebook.com/prathyusha.palangthodkar" target="_newtab"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="https://www.facebook.com/prathyusha.palangthodkar" target="_newtab"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                            <li><a href="tel:+91 90364 92180"><i class="fa fa-phone">+91-9036492180</i></a></li>
-                            <li><a href="mailto:prathyusha.malkari@gmail.com"><i class="fa fa-envelope"> prathyusha.malkari@gmail.com</i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="img/team/t4.jpg" class="img-responsive img-circle" alt="Shashikala Kotankari">
-                        <h4>Shashikala Kotankari</h4>
-                        <p class="text-muted">Android App and Website</p>
-                        <ul class="list-inline social-buttons">
-                            <li><a href="https://www.facebook.com/shashikala.katika"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="https://www.facebook.com/shashikala.katika"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="https://www.linkedin.com/in/shashi-kala-b2830432"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                            <li><a href="tel:+971 56 975 9965"><i class="fa fa-phone">+971-56 975 9965</i></a></li>
-                            <li><a href="mailto:pshashikala.kotankari@gmail.com"><i class="fa fa-envelope"> shashikala.kotankari@gmail.com</i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="img/team/t7.jpg" class="img-responsive img-circle" alt="Rahul Yelloji">
-                        <h4>Yelloji Rao</h4>
-                        <p class="text-muted">Admin for Sunama Jakini Whatzapp group</p>
-                        <ul class="list-inline social-buttons">
-                            <li><a href="https://twitter.com/Rahul_Yelloji"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="mailto:rahul_yelloji@gmail.com"><i class="fa fa-envelope"> rahul_yelloji@gmail.com</i></a>
-                            </li>
-                            <li><a href="tel:+91 8142699699"><i class="fa fa-phone">+91 8142699699</i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="img/team/t8.jpg" class="img-responsive img-circle" alt="Maheedhar HMP">
-                        <h4>Maheedhar HMP</h4>
-                        <p class="text-muted">Admin for Sunama Jakini Facebook Page</p>
-                        <ul class="list-inline social-buttons">
-                            <li><a href="https://www.facebook.com/mahee.hmp"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="mailto:mahee.hmp@gmail.com"><i class="fa fa-envelope"> mahee.hmp@gmail.com</i></a>
-                            </li>
-                            <li><a href="tel:+91 99123 14319"><i class="fa fa-phone">+91 9912314319</i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="img/team/t9.jpg" class="img-responsive img-circle" alt="Shyam HMP">
-                        <h4>Shyam HMP</h4>
-                        <p class="text-muted">Admin for Sunama Jakini Youtube Page</p>
-                        <ul class="list-inline social-buttons">
-                            <li><a href="https://www.facebook.com/shyam.hmp"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="mailto:shyam.hmp@gmail.com"><i class="fa fa-envelope"> Shyam.kumarhmp@gmail.com</i></a>
-                            </li>
-                            <li><a href="tel:+91 97422 63935"><i class="fa fa-phone">91 9742263935</i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    
-                </div>
-            </div>
-        </div>
-    </section>  
-<div class="container text-center">
-  <section id="matrimony" class="bg-light-gray my-section">
-  <br><br><br>
-    <div class="row">
-      <div class="col-sm-12">
-      <h3>Provide your details in the form below. These details shall be shared with Samaj members. This service is completely free</h3>
-      <iframe src="https://goo.gl/forms/9pzFvKw7sTAgDZRr2" style="width:100%;height:600px" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
     </div>
   </section>
-</div>
-<section id="location" class="bg-light-gray my-section">
-<div class="container text-center">
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3851.460130996507!2d77.6254546!3d15.1330544!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x99e39e1d270c306a!2sSri+Sunama+Jakani+Temple!5e0!3m2!1sen!2sin!4v1489251827336" style="width:100%;height:400px" frameborder="0" style="border:0" allowfullscreen></iframe>
-</div>
-</section>
-<br>
-<section id="feedback">
-  <div class="container text-center my-section">
-  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfrlwYzSjhjTANuk_aAc8iDo4rwix86HkKcD9KujgAuzzjnBg/viewform?embedded=true" style="width:100%;height:400px" frameborder="0" marginheight="0" marginwidth="0">Loading Feedback form...</iframe>
-  </div>
-</section>
-<footer class="container-fluid text-center sunama-footer">
-  <p>©2017 CopyRights Reserved.,<br>Shree Sunama Jakini Maatha Temple, Gooty, A.P<br>Opp. Kendriya Vidyala, Railway Station Road<br>
-  Gooty - 515401, Anantapur Dist (A.P)<br><br><b>Powered by <a href="http://www.4g-labs.com" target="_blank">4G Labs</a></b></p>
-</footer>
+  <section id="committee" class="bg-light-gray my-section ">
+    <div class="container ">
+      <br>
+      <br>
+      <br>
+      <h3 class="text-center ">Temple Management Committe</h3>
+      <div class="row ">
+        <div class="col-sm-12 ">
+          <div class="zone_info_mep first ">
+            <img border="0 " title="K Subhanji Rao " alt="Subhanji Rao " class="photo_mep " style="width:100px;height: 100px " src="img/committee/president.jpg ">
+            <div class="mep_details ">
+              <ul>
+                <li class="mep_name ">
+                  <h4>K Subhanji Rao</h4>
+                  <span class="statute ">President</span>
+                </li>
+                <li class="group epp ">
+                  <a href="tel:+91-9985761337 ">+91-9985761337</a>
+                </li>
+              </ul>
+            </div>
+            <div class="clear "> &nbsp; </div>
+          </div>
+          <div class="zone_info_mep first ">
+            <a href="https://www.facebook.com/profile.php?id=100009555014128 "><img border="0 " title="K Subhanji Rao " alt="Subhanji Rao " class="photo_mep " style="width:100px;height: 100px " src="img/member2.jpg ">
+            </a>
+            <div class="mep_details ">
+              <ul>
+                <li class="mep_name ">
+                  <h4>M Subhash</h4>
+                  <span class="statute ">Secretary</span>
+                </li>
+                <li class="group epp ">
+                  <a href="tel:+91-9440044980 ">+91-9440044980</a>
+                </li>
+              </ul>
+            </div>
+            <div class="clear "> &nbsp; </div>
+          </div>
+          <div class="zone_info_mep first ">
+            <img border="0 " title="H Sudhakar Rao " alt="Sudhakar Rao " class="photo_mep " style="width:100px;height: 100px " src="img/committee/treasurer.jpg ">
+            <div class="mep_details ">
+              <ul>
+                <li class="mep_name ">
+                  <h4>H Sudhakar Rao</h4>
+                  <span class="statute ">Treasurer</span>
+                </li>
+                <li class="group epp ">
+                  <a href="tel:+91-9494131647 ">+91-9494131647</a>
+                </li>
+              </ul>
+            </div>
+            <div class="clear "> &nbsp; </div>
+          </div>
+          <div class="zone_info_mep first ">
+            <img border="0 " title="H Lingoji Rao " alt="H Lingoji Rao " class="photo_mep " style="width:100px;height: 100px " src="img/committee/asst_treasurer.jpg ">
+            <div class="mep_details ">
+              <ul>
+                <li class="mep_name ">
+                  <h4>H Lingoji Rao</h4>
+                  <span class="statute ">Asst Treasurer</span>
+                </li>
+                <li class="group epp ">
+                  <a href="tel:+91-9985761337 ">+91-9985761337</a>
+                </li>
+              </ul>
+            </div>
+            <div class="clear "> &nbsp; </div>
+          </div>
+          <div class="zone_info_mep first ">
+            <img border="0 " title="MK Babu Rao " alt="MK Babu Rao " class="photo_mep " style="width:100px;height: 100px " src="img/committee/asst_treasurer2.jpg ">
+            <div class="mep_details ">
+              <ul>
+                <li class="mep_name ">
+                  <h4>MK Babu Rao</h4>
+                  <span class="statute ">Asst Treasurer</span>
+                </li>
+                <li class="group epp ">
+                  <a href="tel:+91-9985761337 ">+91-9985761337</a>
+                </li>
+              </ul>
+            </div>
+            <div class="clear "> &nbsp; </div>
+          </div>
+          <div class="zone_info_mep first ">
+            <img border="0 " title="K Suresh Rao " alt="K Suresh Rao " class="photo_mep " style="width:100px;height: 100px " src="img/committee/exec_member1.jpg ">
+            <div class="mep_details ">
+              <ul>
+                <li class="mep_name ">
+                  <h4>K Suresh Rao</h4>
+                  <span class="statute ">Executive Committee Member</span>
+                </li>
+                <li class="group epp ">
+                  <a href="tel:+91-9985761337 ">+91-9985761337</a>
+                </li>
+              </ul>
+            </div>
+            <div class="clear "> &nbsp; </div>
+          </div>
+          <div class="zone_info_mep first ">
+            <img border="0 " title="H Rana Pratap " alt="H Rana Pratap " class="photo_mep " style="width:100px;height: 100px " src="img/committee/exec_member2.jpg ">
+            <div class="mep_details ">
+              <ul>
+                <li class="mep_name ">
+                  <h4>H Rana Pratap</h4>
+                  <span class="statute ">Executive Committee Member</span>
+                </li>
+                <li class="group epp ">
+                  <a href="tel:+91-9985761337 ">+91-9985761337</a>
+                </li>
+              </ul>
+            </div>
+            <div class="clear "> &nbsp; </div>
+          </div>
+          <div class="zone_info_mep first ">
+            <img border="0 " title="Aluru M Lakshman Rao " alt="Aluru M Lakshman Rao " class="photo_mep " style="width:100px;height: 100px " src="img/committee/exec_member3.jpg ">
+            <div class="mep_details ">
+              <ul>
+                <li class="mep_name ">
+                  <h4>Aluru M Lakshman Rao</h4>
+                  <span class="statute ">Executive Committee Member</span>
+                </li>
+                <li class="group epp ">
+                  <a href="tel:+91-9985761337 ">+91-9985761337</a>
+                </li>
+              </ul>
+            </div>
+            <div class="clear "> &nbsp; </div>
+          </div>
+          <div class="zone_info_mep first ">
+            <img border="0 " title="Shivaram Babaji " alt="Shivaram Babaji " class="photo_mep " style="width:100px;height: 100px " src="img/committee/exec_member4.jpg ">
+            <div class="mep_details ">
+              <ul>
+                <li class="mep_name ">
+                  <h4>Shivaram Babaji</h4>
+                  <span class="statute ">Executive Committee Member</span>
+                </li>
+                <li class="group epp ">
+                  <a href="tel:+91-9985761337 ">+91-9985761337</a>
+                </li>
+              </ul>
+            </div>
+            <div class="clear "> &nbsp; </div>
+          </div>
+          <div class="zone_info_mep first ">
+            <img border="0 " title="HM Seshaji Rao " alt="HM Seshaji Rao " class="photo_mep " style="width:100px;height: 100px " src="img/committee/exec_member5.jpg ">
+            <div class="mep_details ">
+              <ul>
+                <li class="mep_name ">
+                  <h4>HM Seshaji Rao</h4>
+                  <span class="statute ">Executive Committee Member</span>
+                </li>
+                <li class="group epp ">
+                  <a href="tel:+91-9985761337 ">+91-9985761337</a>
+                </li>
+              </ul>
+            </div>
+            <div class="clear "> &nbsp; </div>
+          </div>
+          <div class="zone_info_mep first ">
+            <img border="0 " title="K Lakshman Rao " alt="K Lakshman Rao " class="photo_mep " style="width:100px;height: 100px " src="img/committee/exec_member6.jpg ">
+            <div class="mep_details ">
+              <ul>
+                <li class="mep_name ">
+                  <h4>K Lakshman Rao</h4>
+                  <span class="statute ">Executive Committee Member</span>
+                </li>
+                <li class="group epp ">
+                  <a href="tel:+91-9985761337 ">+91-9985761337</a>
+                </li>
+              </ul>
+            </div>
+            <div class="clear "> &nbsp; </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="team" class="bg-light-gray my-section ">
+    <div class="container ">
+      <br>
+      <br>
+      <br>
+      <div class="row">
+        <div class="col-lg-12 text-center ">
+          <h2 class="section-heading ">Technical Team</h2>
+          <h3 class="section-subheading text-muted ">We are team of volunteers working for Shree Sunama Jakini Maatha Temple to help piligrims get updated information about Maatha through various internet channels</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4 ">
+          <div class="team-member ">
+            <img src="img/team/t5.jpg " class="img-responsive img-circle " alt="Balaji Katika ">
+            <h4>Balaji Palangthodkar</h4>
+            <p class="text-muted ">Android App and Website</p>
+            <ul class="list-inline social-buttons ">
+              <li><a href="https://www.facebook.com/balaji.palangthodkar "><i class="fa fa-twitter "></i></a>
+              </li>
+              <li><a href="https://www.facebook.com/balaji.palangthodkar "><i class="fa fa-facebook "></i></a>
+              </li>
+              <li><a href="https://www.linkedin.com/in/balaji.katika "><i class="fa fa-linkedin "></i></a>
+              </li>
+              <li><a href="tel:+91 98866 56337 "><i class="fa fa-phone ">+91-9886656337</i></a>
+              </li>
+              <li><a href="mailto:balaji.katika@gmail.com "><i class="fa fa-envelope "> balaji.katika@gmail.com</i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="team-member">
+            <img src="img/team/t1.jpg" class="img-responsive img-circle " alt="Prathyusha ">
+            <h4>Prathyusha Palangthodkar</h4>
+            <p class="text-muted ">Android App and Website</p>
+            <ul class="list-inline social-buttons ">
+              <li><a href="https://www.facebook.com/prathyusha.palangthodkar " target="_newtab "><i class="fa fa-twitter "></i></a>
+              </li>
+              <li><a href="https://www.facebook.com/prathyusha.palangthodkar " target="_newtab "><i class="fa fa-facebook "></i></a>
+              </li>
+              <li><a href="https://www.facebook.com/prathyusha.palangthodkar " target="_newtab "><i class="fa fa-linkedin "></i></a>
+              </li>
+              <li><a href="tel:+91 90364 92180 "><i class="fa fa-phone ">+91-9036492180</i></a>
+              </li>
+              <li><a href="mailto:prathyusha.malkari@gmail.com "><i class="fa fa-envelope "> prathyusha.malkari@gmail.com</i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-4 ">
+          <div class="team-member ">
+            <img src="img/team/t4.jpg " class="img-responsive img-circle " alt="Shashikala Kotankari ">
+            <h4>Shashikala Kotankari</h4>
+            <p class="text-muted ">Android App and Website</p>
+            <ul class="list-inline social-buttons ">
+              <li><a href="https://www.facebook.com/shashikala.katika "><i class="fa fa-twitter "></i></a>
+              </li>
+              <li><a href="https://www.facebook.com/shashikala.katika "><i class="fa fa-facebook "></i></a>
+              </li>
+              <li><a href="https://www.linkedin.com/in/shashi-kala-b2830432 "><i class="fa fa-linkedin "></i></a>
+              </li>
+              <li><a href="tel:+971 56 975 9965 "><i class="fa fa-phone ">+971-56 975 9965</i></a>
+              </li>
+              <li><a href="mailto:pshashikala.kotankari@gmail.com "><i class="fa fa-envelope "> shashikala.kotankari@gmail.com</i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-4 ">
+          <div class="team-member ">
+            <img src="img/team/t7.jpg " class="img-responsive img-circle " alt="Rahul Yelloji ">
+            <h4>Yelloji Rao</h4>
+            <p class="text-muted ">Admin for Sunama Jakini Whatzapp group</p>
+            <ul class="list-inline social-buttons ">
+              <li><a href="https://twitter.com/Rahul_Yelloji "><i class="fa fa-twitter "></i></a>
+              </li>
+              <li><a href="mailto:rahul_yelloji@gmail.com "><i class="fa fa-envelope "> rahul_yelloji@gmail.com</i></a>
+              </li>
+              <li><a href="tel:+91 8142699699 "><i class="fa fa-phone ">+91 8142699699</i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-4 ">
+          <div class="team-member ">
+            <img src="img/team/t8.jpg " class="img-responsive img-circle " alt="Maheedhar HMP ">
+            <h4>Maheedhar HMP</h4>
+            <p class="text-muted ">Admin for Sunama Jakini Facebook Page</p>
+            <ul class="list-inline social-buttons ">
+              <li><a href="https://www.facebook.com/mahee.hmp "><i class="fa fa-facebook "></i></a>
+              </li>
+              <li><a href="mailto:mahee.hmp@gmail.com "><i class="fa fa-envelope "> mahee.hmp@gmail.com</i></a>
+              </li>
+              <li><a href="tel:+91 99123 14319 "><i class="fa fa-phone ">+91 9912314319</i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-4 ">
+          <div class="team-member ">
+            <img src="img/team/t9.jpg " class="img-responsive img-circle " alt="Shyam HMP ">
+            <h4>Shyam HMP</h4>
+            <p class="text-muted ">Admin for Sunama Jakini Youtube Page</p>
+            <ul class="list-inline social-buttons ">
+              <li><a href="https://www.facebook.com/shyam.hmp "><i class="fa fa-facebook "></i></a>
+              </li>
+              <li><a href="mailto:shyam.hmp@gmail.com "><i class="fa fa-envelope "> Shyam.kumarhmp@gmail.com</i></a>
+              </li>
+              <li><a href="tel:+91 97422 63935 "><i class="fa fa-phone ">91 9742263935</i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 text-center ">
 
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="matrimony" class="bg-light-gray my-section ">
+    <div class="container text-center ">
+      <br>
+      <br>
+      <br>
+      <div class="row ">
+        <div class="col-sm-12 ">
+          <h3>Provide your details in the form below. These details shall be shared with Samaj members. This service is completely free</h3>
+          <iframe src="https://goo.gl/forms/9pzFvKw7sTAgDZRr2 " style="width:100%;height:600px " frameborder="0 " style="border:0 " allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="location" class="bg-light-gray my-section">
+    <div class="container text-center ">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3851.460130996507!2d77.6254546!3d15.1330544!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x99e39e1d270c306a!2sSri+Sunama+Jakani+Temple!5e0!3m2!1sen!2sin!4v1489251827336 " style="width:100%;height:400px " frameborder="0 " style="border:0 " allowfullscreen></iframe>
+    </div>
+  </section>
+  <section id="feedback" class="bg-light-gray my-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="container text-center">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfrlwYzSjhjTANuk_aAc8iDo4rwix86HkKcD9KujgAuzzjnBg/viewform?embedded=true" style="width:100%;height:400px" frameborder="0" marginheight="0" marginwidth="0">Loading Feedback form...
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="container-fluid text-center sunama-footer">
+    <p>©2017 CopyRights Reserved.,
+      <br>Shree Sunama Jakini Maatha Temple, Gooty, A.P
+      <br>Opp. Kendriya Vidyala, Railway Station Road
+      <br> Gooty - 515401, Anantapur Dist (A.P)
+      <br>
+      <br><b>Powered by <a href="http://www.4g-labs.com" target="_blank">4G Labs</a></b>
+    </p>
+  </footer>
 </body>
 </html>
-<!-- http://www.europarl.europa.eu/committees/en/envi/members.html-->
